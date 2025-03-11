@@ -3,7 +3,7 @@ package Application.modelClass.processScheduling;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
-public class PriorityNonModel {
+public class PriorityNonPreEmpModel {
     SimpleStringProperty process;
     SimpleIntegerProperty arrival;
     SimpleIntegerProperty burst;
@@ -13,7 +13,7 @@ public class PriorityNonModel {
     SimpleIntegerProperty priority;
 
 
-    public PriorityNonModel(String process, int arrival, int burst, int priority, int completion, int turn, int waiting) {
+    public PriorityNonPreEmpModel(String process, int arrival, int burst, int priority, int completion, int turn, int waiting) {
         this.process = new SimpleStringProperty(process);
         this.arrival = new SimpleIntegerProperty(arrival);
         this.burst = new SimpleIntegerProperty(burst);

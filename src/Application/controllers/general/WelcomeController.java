@@ -22,28 +22,28 @@ public class WelcomeController {
         stage.show();
     }
     public void switchToDiskScheduling(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("/Application/resources/fxmls/ProcessScheduling.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/Application/resources/fxmls/DiskScheduling.fxml"));
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
     public void switchToPageReplacement(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("/Application/resources/fxmls/ProcessScheduling.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/Application/resources/fxmls/PageReplacement.fxml"));
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
     public void switchToMemoryAllocation(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("/Application/resources/fxmls/ProcessScheduling.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/Application/resources/fxmls/MemoryAllocation.fxml"));
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
     public void switchToDeadlock(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("/Application/resources/fxmls/ProcessScheduling.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/Application/resources/fxmls/Deadlock.fxml"));
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

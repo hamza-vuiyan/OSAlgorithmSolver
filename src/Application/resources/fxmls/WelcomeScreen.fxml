@@ -12,10 +12,10 @@
             <Font size="19.0" />
          </font>
       </Label>
-      <Button layoutX="89.0" layoutY="187.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="145.0" text="Disk Scheduling" />
-      <Button layoutX="89.0" layoutY="231.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="145.0" text="Page Replacement" />
-      <Button layoutX="89.0" layoutY="275.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="145.0" text="Memory Allocation" />
-      <Button layoutX="89.0" layoutY="312.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="145.0" text="Dead Lock" />
-      <Button layoutX="89.0" layoutY="148.0" mnemonicParsing="false" onAction="#switchToProcessScheduling" prefHeight="26.0" prefWidth="145.0" text="Process Scheduling" />
+      <Button layoutX="228.0" layoutY="148.0" mnemonicParsing="false" onAction="#switchToDiskScheduling" prefHeight="26.0" prefWidth="145.0" text="Disk Scheduling" />
+      <Button layoutX="411.0" layoutY="148.0" mnemonicParsing="false" onAction="#switchToPageReplacement" prefHeight="26.0" prefWidth="145.0" text="Page Replacement" />
+      <Button layoutX="137.0" layoutY="213.0" mnemonicParsing="false" onAction="#switchToMemoryAllocation" prefHeight="26.0" prefWidth="145.0" text="Memory Allocation" />
+      <Button layoutX="339.0" layoutY="213.0" mnemonicParsing="false" onAction="#switchToDeadlock" prefHeight="26.0" prefWidth="145.0" text="Dead Lock" />
+      <Button layoutX="45.0" layoutY="148.0" mnemonicParsing="false" onAction="#switchToProcessScheduling" prefHeight="26.0" prefWidth="145.0" text="Process Scheduling" />
    </children>
 </AnchorPane>

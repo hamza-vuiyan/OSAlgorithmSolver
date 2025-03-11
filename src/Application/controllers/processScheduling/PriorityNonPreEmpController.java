@@ -1,6 +1,6 @@
 package Application.controllers.processScheduling;
 
-import Application.modelClass.processScheduling.PriorityNonModel;
+import Application.modelClass.processScheduling.PriorityNonPreEmpModel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -59,7 +59,7 @@ class Table{
 }
 
 
-public class PriorityNonController implements Initializable{
+public class PriorityNonPreEmpController implements Initializable{
     @FXML
     private Button submitButton;
     @FXML
@@ -93,16 +93,16 @@ public class PriorityNonController implements Initializable{
         stage.show();
     }
 
-    public  TableView <PriorityNonModel> tableView;
-    public  TableColumn<PriorityNonModel, String> processCol;
-    public  TableColumn<PriorityNonModel, Integer> arrivalCol;
-    public  TableColumn<PriorityNonModel, Integer> burstCol;
-    public  TableColumn<PriorityNonModel, Integer> priorityCol;
-    public  TableColumn<PriorityNonModel, Integer> ctCol;
-    public  TableColumn<PriorityNonModel, Integer> tatCol;
-    public  TableColumn<PriorityNonModel, Integer> wtCol;
+    public  TableView <PriorityNonPreEmpModel> tableView;
+    public  TableColumn<PriorityNonPreEmpModel, String> processCol;
+    public  TableColumn<PriorityNonPreEmpModel, Integer> arrivalCol;
+    public  TableColumn<PriorityNonPreEmpModel, Integer> burstCol;
+    public  TableColumn<PriorityNonPreEmpModel, Integer> priorityCol;
+    public  TableColumn<PriorityNonPreEmpModel, Integer> ctCol;
+    public  TableColumn<PriorityNonPreEmpModel, Integer> tatCol;
+    public  TableColumn<PriorityNonPreEmpModel, Integer> wtCol;
 
-    ObservableList<PriorityNonModel> observableList = FXCollections.observableArrayList();
+    ObservableList<PriorityNonPreEmpModel> observableList = FXCollections.observableArrayList();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -217,7 +217,7 @@ public class PriorityNonController implements Initializable{
         grantChartLabel.setText(grantString);
         observableList.clear();
         for (Table row : rows) {
-            observableList.add(new PriorityNonModel(row.job, row.at, row.bt, row.priority, row.ct, row.tat, row.wt));
+            observableList.add(new PriorityNonPreEmpModel(row.job, row.at, row.bt, row.priority, row.ct, row.tat, row.wt));
         }
 
     }

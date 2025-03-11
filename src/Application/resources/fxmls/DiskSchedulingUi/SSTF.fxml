@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Application.controllers.diskScheduling.SSTFController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Button layoutX="47.0" layoutY="32.0" mnemonicParsing="false" onAction="#switchToBack" text="Back" />
+        <Button layoutX="47.0" layoutY="337.0" mnemonicParsing="false" onAction="#switchToHome" text="Home" />
+        <TextField fx:id="pointerInput" layoutX="109.0" layoutY="76.0" prefHeight="26.0" prefWidth="47.0" />
+        <TextField fx:id="queueInput" layoutX="109.0" layoutY="129.0" prefHeight="26.0" prefWidth="254.0" />
+        <Label layoutX="58.0" layoutY="80.0" prefHeight="18.0" prefWidth="63.0" text="Pointer" />
+        <Label layoutX="62.0" layoutY="133.0" prefHeight="18.0" prefWidth="55.0" text="Queue" />
+        <Button layoutX="45.0" layoutY="168.0" mnemonicParsing="false" onAction="#submitButton" text="Submit" />
+        <Label layoutX="75.0" layoutY="225.0" text="Result" />
+        <Label fx:id="output" layoutX="140.0" layoutY="225.0" text="output?" />
+    </children>
+
+</AnchorPane>

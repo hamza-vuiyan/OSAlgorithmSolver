@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controllers.general.DiskSchedulingController">
+   <children>
+      <Button layoutX="93.0" layoutY="67.0" mnemonicParsing="false" onAction="#goToFCFS" prefHeight="26.0" prefWidth="191.0" text="FCFS" />
+      <Button layoutX="93.0" layoutY="107.0" mnemonicParsing="false" onAction="#goToSSTF" prefHeight="26.0" prefWidth="191.0" text="SSTF" />
+      <Button layoutX="93.0" layoutY="147.0" mnemonicParsing="false" onAction="#goToSCAN" prefHeight="26.0" prefWidth="191.0" text="SCAN" />
+      <Button layoutX="94.0" layoutY="187.0" mnemonicParsing="false" onAction="#goToCSCAN" prefHeight="26.0" prefWidth="191.0" text="C-SCAN" />
+      <Button layoutX="94.0" layoutY="228.0" mnemonicParsing="false" onAction="#goToLOOK" prefHeight="26.0" prefWidth="191.0" text="LOOK" />
+      <Button layoutX="94.0" layoutY="272.0" mnemonicParsing="false" onAction="#goToCLOOK" prefHeight="26.0" prefWidth="191.0" text="C-LOOK" />
+      <Button layoutX="29.0" layoutY="35.0" mnemonicParsing="false" onAction="#switchToHome" text="Home" />
+   </children>
 </AnchorPane>

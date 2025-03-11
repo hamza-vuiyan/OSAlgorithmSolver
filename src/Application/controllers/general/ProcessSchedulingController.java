@@ -36,7 +36,7 @@ public class ProcessSchedulingController {
 
     public void switchPriNon(ActionEvent event) {
         try{
-            root = FXMLLoader.load(getClass().getResource("/Application/resources/fxmls/processSchedulingUi/PriorityNonPre.fxml"));
+            root = FXMLLoader.load(getClass().getResource("/Application/resources/fxmls/processSchedulingUi/PriorityNonPreFx.fxml"));
             stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -48,7 +48,7 @@ public class ProcessSchedulingController {
     // for going to page priority scheduling non pre-emtive
     public void switchPri(ActionEvent event) {
         try{
-            root = FXMLLoader.load(getClass().getResource("/Application/resources/fxmls/processSchedulingUi/PriorityPre.fxml"));
+            root = FXMLLoader.load(getClass().getResource("/Application/resources/fxmls/processSchedulingUi/PriorityPreEmpFx.fxml"));
             stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
