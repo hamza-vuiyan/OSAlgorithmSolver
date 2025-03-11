@@ -3,9 +3,11 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controllers.general.MemoryAllocationController">
    <children>
       <Button layoutX="71.0" layoutY="39.0" mnemonicParsing="false" onAction="#switchToHome" text="Home" />
+      <Button layoutX="69.0" layoutY="92.0" mnemonicParsing="false" onAction="#goToFirstFit" prefHeight="26.0" prefWidth="137.0" text="First Fit" />
+      <Button layoutX="69.0" layoutY="143.0" mnemonicParsing="false" onAction="#goToBestFit" prefHeight="26.0" prefWidth="137.0" text="Best Fit" />
+      <Button layoutX="69.0" layoutY="194.0" mnemonicParsing="false" onAction="#goToWorstFit" prefHeight="26.0" prefWidth="137.0" text="Worst Fit" />
    </children>
 </AnchorPane>

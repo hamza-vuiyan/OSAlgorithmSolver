@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Application.controllers.memoryAllocation.worstFitController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="34.0" layoutY="73.0" prefHeight="18.0" prefWidth="119.0" text="Memory Sagments" />
+        <Label layoutX="36.0" layoutY="121.0" prefHeight="18.0" prefWidth="84.0" text="Process Size" />
+        <TextField fx:id="segmentsInput" layoutX="178.0" layoutY="69.0" prefHeight="26.0" prefWidth="346.0" />
+        <Button layoutX="178.0" layoutY="163.0" mnemonicParsing="false" onAction="#submitButton" text="Submit" />
+        <Label layoutX="52.0" layoutY="235.0" prefHeight="18.0" prefWidth="126.0" text="Total Fragmentation" />
+        <Label fx:id="output" layoutX="209.0" layoutY="235.0" text="?output" />
+        <Label layoutX="186.0" layoutY="18.0" prefHeight="26.0" prefWidth="218.0" text="Worst Fit Memory Allocation" />
+        <TextField fx:id="processInput" layoutX="178.0" layoutY="117.0" prefHeight="26.0" prefWidth="346.0" />
+        <Button layoutX="34.0" layoutY="18.0" mnemonicParsing="false" onAction="#switchToBack" text="Back" />
+        <Button layoutX="34.0" layoutY="328.0" mnemonicParsing="false" onAction="#switchToHome" text="Home" />
+    </children>
+</AnchorPane>
