@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Application.controllers.PageReplacement.OptimumController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Button layoutX="52.0" layoutY="32.0" mnemonicParsing="false" onAction="#goToBack" text="Back" />
+        <Button layoutX="48.0" layoutY="324.0" mnemonicParsing="false" onAction="#goToHome" text="Home" />
+        <Label layoutX="200.0" layoutY="23.0" text="Optimum page replacement algorithm" />
+        <Label layoutX="77.0" layoutY="104.0" text="Frame Number" />
+        <Label layoutX="76.0" layoutY="150.0" text="Page Reference" />
+        <Button layoutX="192.0" layoutY="187.0" mnemonicParsing="false" onAction="#submitButton" text="submit" />
+        <Label layoutX="83.0" layoutY="237.0" prefHeight="18.0" prefWidth="47.0" text="Hit" />
+        <Label fx:id="output" layoutX="145.0" layoutY="237.0" text="?output" />
+        <TextField fx:id="frameInput" layoutX="192.0" layoutY="100.0" prefHeight="26.0" prefWidth="75.0" />
+        <TextField fx:id="pagerefInput" layoutX="192.0" layoutY="146.0" prefHeight="26.0" prefWidth="317.0" />
+        <Label layoutX="83.0" layoutY="265.0" text="Miss" />
+        <Label fx:id="miss" layoutX="145.0" layoutY="265.0" text="?miss" />
+        <Label layoutX="237.0" layoutY="237.0" text="Hit Ratio" />
+        <Label fx:id="ratio" layoutX="304.0" layoutY="237.0" text="?ratio" />
+    </children>
+</AnchorPane>

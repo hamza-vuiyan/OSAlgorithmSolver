@@ -43,8 +43,8 @@ public class CLOOKController {
     Vector<Integer> queueArray = new Vector<Integer>();
 
     public void submitButton(ActionEvent actionEvent) {
-        String headPointer = pointerInput.getText();
-        String queue = queueInput.getText();
+        String headPointer = pointerInput.getText().trim();
+        String queue = queueInput.getText().trim();
         if (headPointer.isEmpty()) {
             output.setText("Invalid Input: Pointer is empty!");
             return;
