@@ -49,7 +49,7 @@ public class OptimumController {
     public void submitButton(ActionEvent event) {
         try {
             String framesStr = frameInput.getText().trim().replaceAll("\\s+", " ");
-            String references = pagerefInput.getText().trim().replaceAll("\\s+", " ");;
+            String references = pagerefInput.getText().trim().replaceAll("\\s+", " ");
 
             if (framesStr.isEmpty() || references.isEmpty()) {
                 output.setText("Invalid input: Frames or references are empty!");
@@ -64,7 +64,6 @@ public class OptimumController {
                 pageRefArray.add(Integer.parseInt(token));
             }
 
-            // Optimal Page Replacement Algorithm
             Set<Integer> frameSet = new LinkedHashSet<>();
             int hitCount = 0;
 
@@ -73,10 +72,10 @@ public class OptimumController {
 
                 if (frameSet.contains(page)) { // Hit
                     hitCount++;
-                } else { // Page fault
+                } else {
                     if (frameSet.size() < frameNumber) {
                         frameSet.add(page);
-                    } else { // Replace optimal page
+                    } else {
                         int pageToReplace = findOptimalPage(frameSet, pageRefArray, i + 1);
                         frameSet.remove(pageToReplace);
                         frameSet.add(page);
@@ -100,10 +99,10 @@ public class OptimumController {
 
         for (int framePage : frameSet) {
             int nextIndex = pages.subList(startIndex, pages.size()).indexOf(framePage);
-            if (nextIndex == -1) { // If page never appears again
+            if (nextIndex == -1) {
                 return framePage;
             }
-            nextIndex += startIndex; // Adjust index for subList
+            nextIndex += startIndex;
             if (nextIndex > farthestIndex) {
                 farthestIndex = nextIndex;
                 pageToReplace = framePage;

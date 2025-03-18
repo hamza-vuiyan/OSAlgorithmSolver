@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controllers.general.DeadLockController">
    <children>
-      <Button layoutX="69.0" layoutY="48.0" mnemonicParsing="false" onAction="#switchToHome" text="Home" />
+      <Button layoutX="26.0" layoutY="22.0" mnemonicParsing="false" onAction="#switchToHome" text="Home" />
+<!--      <Label layoutX="67.0" layoutY="60.0" text="Row" />-->
+<!--      <Label layoutX="68.0" layoutY="91.0" prefHeight="18.0" prefWidth="27.0" text="Col" />-->
+<!--      <TextField fx:id="rowInput" layoutX="108.0" layoutY="56.0" prefHeight="26.0" prefWidth="27.0" />-->
+<!--      <TextField fx:id="colInput" layoutX="108.0" layoutY="91.0" prefHeight="26.0" prefWidth="27.0" />-->
+<!--      <Button layoutX="64.0" layoutY="128.0" mnemonicParsing="false" onAction="#submitRC" text="submit" />-->
+<!--      <Label layoutX="151.0" layoutY="60.0" text="Allocated" />-->
+<!--      <TextField fx:id="allocated" layoutX="219.0" layoutY="56.0" />-->
+<!--      <Button layoutX="393.0" layoutY="56.0" mnemonicParsing="false" onAction="#submitAllocated" prefHeight="26.0" prefWidth="61.0" text="submit" />-->
+<!--      <Label layoutX="151.0" layoutY="91.0" text="Maximum Need" />-->
+<!--      <TextField fx:id="maximum" layoutX="262.0" layoutY="91.0" />-->
+<!--      <Button layoutX="437.0" layoutY="91.0" mnemonicParsing="false" onAction="#submitMaxNeed" prefHeight="26.0" prefWidth="61.0" text="submit" />-->
+<!--      <Label layoutX="151.0" layoutY="132.0" prefHeight="18.0" prefWidth="61.0" text="Available" />-->
+<!--      <TextField fx:id="maximum1" layoutX="212.0" layoutY="128.0" />-->
+<!--      <Button layoutX="394.0" layoutY="128.0" mnemonicParsing="false" onAction="#submitAvailble" prefHeight="26.0" prefWidth="61.0" text="submit" />-->
+<!--      <Label layoutX="50.0" layoutY="207.0" prefHeight="18.0" prefWidth="61.0" text="Result:" />-->
+<!--      <Label layoutX="135.0" layoutY="207.0" prefHeight="18.0" prefWidth="83.0" text="?safe/unsafe" />-->
    </children>
 </AnchorPane>

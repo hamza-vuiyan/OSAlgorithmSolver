@@ -1,13 +1,16 @@
 package Application.controllers.general;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Vector;
 
 public class DeadLockController {
     private Stage stage;
@@ -20,4 +23,32 @@ public class DeadLockController {
         stage.setScene(scene);
         stage.show();
     }
+
+//
+//    @FXML
+//    private TextField rowInput;
+//    @FXML
+//    private TextField colInput;
+//    @FXML
+//    private TextField allocated;
+//    @FXML
+//    private TextField maximum;
+//
+//    int row, col;
+//    public void submitRC(ActionEvent event) {
+//        String rowS = rowInput.getText().trim();
+//        String colS = colInput.getText().trim();
+//        row = Integer.parseInt(rowS);
+//        col = Integer.parseInt(colS);
+//    }
+//
+//    Vector<Vector<Integer>> matAllocated = new Vector<>();
+//    int counter = 0;
+//    public void submitAllocated(ActionEvent event) {
+//        if(counter > row) return;
+//        String allRow = allocated.getText().trim();
+//        for(int i = 0; i < row; i++){}
+//
+//        counter++;
+//    }
 }
